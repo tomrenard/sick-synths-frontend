@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 const PaginationStyles = styled.div`
   text-align: center;
-  display: inline-grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
+  max-width: 580px;
   align-items: stretch;
   justify-content: center;
   align-content: center;
-  margin: 2rem 0;
+  margin: 2rem auto;
+  padding: 0;
   border: 1px solid var(--lightGray);
   border-radius: 10px;
   & > * {

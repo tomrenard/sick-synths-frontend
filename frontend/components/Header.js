@@ -9,13 +9,12 @@ const LogoStyles = styled.h1`
   margin-left: 2rem;
   position: relative;
   z-index: 2;
-  background: red;
   transform: skew(-7deg);
   a {
-    color: white;
+    color: var(--black);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.3rem;
   }
 `;
 
@@ -39,7 +38,7 @@ export default function Header() {
     <HeaderStyles>
       <div className="bar">
         <LogoStyles>
-          <Link href="/">Sick Fits</Link>
+          <Link href="/">Sick Synths</Link>
         </LogoStyles>
         <Nav />
       </div>

@@ -7,9 +7,13 @@ export default function ProductPage() {
   const page = parseInt(query.page);
   return (
     <div>
-      <Pagination page={page || 1} />
+      <div style={{ textAlign: 'center' }}>
+        <Pagination page={page || 1} />
+      </div>
       <Products page={page || 1} />
-      <Pagination page={page || 1} />
+      <div style={{ textAlign: 'center' }}>
+        <Pagination page={page || 1} />
+      </div>
     </div>
   );
 }

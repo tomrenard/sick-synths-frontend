@@ -18,7 +18,7 @@ export default function Nav() {
           <Link href="/account">Account</Link>
           <SignOut />
           <button type="button" onClick={openCart}>
-            My Cart
+            Cart
             <CartCount
               count={user.cart.reduce(
                 (tally, cartItem) =>
